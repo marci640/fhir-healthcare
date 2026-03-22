@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDS | Simple UDS Reporting</title>
+    <style>
+        /* PALETTE: Linen #F7EDE2 | Yellow #F6BD60 | Rose #F5CAC3 | Blue #84A59D | Slate #71858C */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; background-color: #F7EDE2; color: #313A3E; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        
+        nav { background: #ffffff; border-bottom: 2px solid #71858C; padding: 1.2rem 0; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.4rem; color: #84A59D; text-decoration: none; }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav ul li a { text-decoration: none; color: #71858C; font-weight: 600; }
+        .nav-active { color: #F6BD60; }
+
+        header.page-header { background: #71858C; color: #F7EDE2; padding: 60px 0; text-align: center; }
+        header h1 { font-size: 2.5rem; color: #F7EDE2; margin-bottom: 10px; }
+
+        section { padding: 40px 0; }
+        
+        .context-box { background: #ffffff; border-left: 6px solid #F6BD60; padding: 30px; margin: 40px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .context-box h3 { color: #F6BD60; margin-bottom: 15px; }
+
+        .goals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
+        .goal-card { background: white; padding: 30px; border: 1px solid #71858C; border-radius: 12px; }
+        .goal-card h3 { color: #84A59D; margin-bottom: 15px; }
+
+        .tech-focus { background: #F5CAC3; border: 2px solid #84A59D; border-radius: 20px; padding: 50px; margin: 60px 0; text-align: center; }
+        .tech-focus h2 { color: #84A59D; margin-bottom: 20px; }
+
+        .slack-section { text-align: center; padding: 60px 0; }
+        .slack-btn { display: inline-block; background: #4A154B; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+
+        footer { text-align: center; padding: 60px 0; border-top: 1px solid #71858C; font-size: 0.9rem; color: #71858C; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">fhir.healthcare</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="suds.html" class="nav-active">SUDS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>SUDS: Simple UDS Reporting</h1>
+            <p>Reducing the administrative tax on community health centers.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="context-box">
+            <h3>Why SUDS?</h3>
+            <p>FQHCs are navigating a tightening fiscal landscape. Recent <strong>federal Medicaid redeterminations</strong> and funding cuts mean manual reporting is a risk to clinical operations. <strong>SUDS</strong> automates UDS submissions so centers can focus on patient care.</p>
+        </section>
+
+        <section class="goals-grid">
+            <div class="goal-card">
+                <h3>Unified Data Models</h3>
+                <p>SUDS integrates <strong>UDS Financial Tables</strong> with clinical and demographic data, providing a holistic view of center performance proprietary silos cannot match.</p>
+            </div>
+            <div class="goal-card">
+                <h3>UDS+ & FHIR Ready</h3>
+                <p>Prepare for patient-level reporting. SUDS generates FHIR exports with a visualization layer to validate accuracy before submission.</p>
+            </div>
+            <div class="goal-card">
+                <h3>Data Sovereignty</h3>
+                <p>Own your metrics. Using open-source <strong>CQL engines</strong>, SUDS puts HEDIS digital quality measurements directly in the hands of the organization.</p>
+            </div>
+        </section>
+
+        <section class="tech-focus">
+            <h2>Built on eClinicalWorks & Tuva</h2>
+            <p>Optimized for <strong>eClinicalWorks (eCW)</strong>, SUDS leverages the open-source <strong>Tuva Connector</strong> to map raw clinical data into actionable UDS schemas instantly.</p>
+            <a href="https://www.tuvahealth.com/" target="_blank" style="color: #313A3E; font-weight: 700; display: block; margin-top: 20px;">Explore Tuva Data Models &rarr;</a>
+        </section>
+
+        <section class="slack-section">
+            <h2>Join the Mission</h2>
+            <p style="margin-bottom: 30px;">Help us build the future of open-source community health analytics.</p>
+            <a href="#" class="slack-btn">Connect on Slack</a>
+        </section>
+    </main>
+
+    <footer><div class="container"><p>&copy; 2026 fhir.healthcare</p></div></footer>
+</body>
+</html>

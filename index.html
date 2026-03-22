@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fhir.healthcare | Open-Source Health Tools</title>
+    <style>
+        /* PALETTE: Linen #F7EDE2 | Yellow #F6BD60 | Rose #F5CAC3 | Blue #84A59D | Slate #71858C */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; background-color: #F7EDE2; color: #313A3E; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        
+        nav { background: #ffffff; border-bottom: 2px solid #71858C; padding: 1.2rem 0; position: sticky; top: 0; z-index: 1000; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.4rem; color: #84A59D; text-decoration: none; }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav ul li a { text-decoration: none; color: #71858C; font-weight: 600; }
+        .nav-active { color: #F6BD60; }
+        nav ul li a:hover { color: #F6BD60; }
+
+        header.hero { background: #71858C; color: #F7EDE2; padding: 80px 0; text-align: center; }
+        header h1 { font-size: 3rem; color: #F7EDE2; margin-bottom: 15px; }
+
+        section { padding: 60px 0; }
+        h2 { color: #F6BD60; font-size: 2.2rem; margin-bottom: 1.5rem; text-align: center; }
+        
+        /* SUDS Spotlight */
+        .product-spotlight { background: #F5CAC3; border: 2px solid #84A59D; border-radius: 20px; padding: 40px; margin: 20px 0; }
+        .product-spotlight h2 { color: #84A59D; }
+        .tech-stack { background: rgba(255, 255, 255, 0.5); padding: 20px; border-radius: 12px; margin: 24px 0; border-left: 6px solid #F6BD60; }
+        
+        /* Resource Grid */
+        .resource-section { background: #ffffff; padding: 60px 0; border-top: 1px solid #71858C; border-bottom: 1px solid #71858C; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .resource-group h3 { color: #84A59D; border-bottom: 2px solid #F5CAC3; padding-bottom: 10px; margin-bottom: 20px; }
+        .resource-group ul { list-style: none; }
+        .resource-group li { margin-bottom: 18px; }
+        .resource-group a { color: #313A3E; font-weight: 700; text-decoration: underline; text-decoration-color: #84A59D; }
+        .resource-group a:hover { color: #84A59D; }
+        .resource-desc { display: block; font-size: 0.9rem; color: #555; font-weight: 400; margin-top: 4px; line-height: 1.4; }
+
+        .btn { display: inline-block; background: #84A59D; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; margin-top: 10px; }
+        footer { text-align: center; padding: 60px 0; font-size: 0.9rem; color: #71858C; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">fhir.healthcare</a>
+            <ul>
+                <li><a href="index.html" class="nav-active">Home</a></li>
+                <li><a href="suds.html">SUDS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Bridging Systems Through Open Standards</h1>
+            <p>Empowering FQHCs with agentic coding and community data models.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2>The FHIR Advantage</h2>
+                <p>The <strong>FHIR standard</strong> is the foundation of modern interoperability. Unlike proprietary silos that restrict data flow, FHIR is international and open. We leverage agentic coding to transform clinical data into actionable operational metrics.</p>
+                
+                <div id="suds" class="product-spotlight">
+                    <h2>Featured Tool: SUDS (Simple UDS)</h2>
+                    <p><strong>SUDS</strong> is a free, open-source ETL and dashboarding engine designed for FQHCs. It automates the extraction and transformation of clinical data to simplify annual UDS reporting.</p>
+                    <div class="tech-stack">
+                        <p>Powered by the <a href="https://marcifey.com/herdingcats" target="_blank"><strong>Herding Cats</strong></a> framework—an agentic dbt platform for autonomous data pipelines with strict quality guardrails.</p>
+                    </div>
+                    <a href="suds.html" class="btn">View suds Project Details &rarr;</a>
+                </div>
+            </section>
+        </div>
+
+        <section id="resources" class="resource-section">
+            <div class="container">
+                <h2>The Open-Source Ecosystem</h2>
+                <div class="grid">
+                    <div class="resource-group">
+                        <h3>Developer Starter Pack</h3>
+                        <ul>
+                            <li><a href="https://fire.ly/resources/" target="_blank">Firely FHIR Training</a><span class="resource-desc">Comprehensive "plain English" tutorials for FHIR profiling and modeling.</span></li>
+                            <li><a href="https://synthetichealth.github.io/synthea/" target="_blank">Synthea&trade; Patient Generator</a><span class="resource-desc">Open-source synthetic patient data for testing without HIPAA constraints.</span></li>
+                            <li><a href="https://chat.fhir.org/" target="_blank">FHIR Zulip Community</a><span class="resource-desc">The real-time global engineering hub for technical collaboration.</span></li>
+                            <li><a href="https://hapifhir.io/" target="_blank">HAPI FHIR</a><span class="resource-desc">The industry-standard Java-based FHIR server and library.</span></li>
+                        </ul>
+                    </div>
+                    <div class="resource-group">
+                        <h3>FQHC & Analytics Guide</h3>
+                        <ul>
+                            <li><a href="https://ecqi.healthit.gov/fhir" target="_blank">HealthIT.gov eCQI</a><span class="resource-desc">Regulatory specifications for HEDIS and digital Quality Measures (dQMs).</span></li>
+                            <li><a href="https://inferno.healthit.gov/" target="_blank">Inferno Testing Suite</a><span class="resource-desc">The official ONC testing tool for verifying FHIR API compliance.</span></li>
+                            <li><a href="https://www.tuvahealth.com/" target="_blank">The Tuva Project</a><span class="resource-desc">Clean clinical data transformation models built for dbt and SQL-on-FHIR.</span></li>
+                            <li><a href="https://pathling.csiro.au/" target="_blank">Pathling Analytics</a><span class="resource-desc">High-performance server designed for FHIR-based analytics and terminology.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><div class="container"><p>&copy; 2026 fhir.healthcare</p></div></footer>
+</body>
+</html>
